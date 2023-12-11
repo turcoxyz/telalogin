@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div class="container">
+    <h2>Cadastro</h2>
+
+  <form action="/submit-cadastro" method="post" data-gtm-form-interact-id="0">
+    <label for="nome" id="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required="">
+
+    <label>Sexo:</label>
+    <input type="radio" id="masculino" name="sexo" value="masculino" data-gtm-form-interact-field-id="0">
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="feminino" name="sexo" value="feminino">
+    <label for="feminino">Feminino</label>
+
+    <label for="login">Login:</label>
+    <input type="text" id="login" name="login" required="">
+
+    <label for="senha" id="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required="">
+
+    <label for="confirmarSenha" id=confirmarsenha>Confirmar Senha:</label>
+    <input type="password" id="confirmarSenha" name="confirmarSenha" required="">
+
+    <label for="setor" id="setor">Setor:</label>
+    <select id="setor" name="setor">      <option value="vendas">Vendas</option>      <option value="rh">Recursos Humanos</option>      <option value="ti">Tecnologia da Informação</option>      <option value="financeiro">Financeiro</option>    </select>
+
+    <input type="submit" value="Cadastrar">
+  </form>
+  
+</div>
+</body>
+</html>
