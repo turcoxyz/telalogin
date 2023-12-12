@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cadastro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
 </head>
 <body>
 
-    <div class="container">
-    <h2>Cadastro</h2>
+  <h2 id="h2">Formulário de Cadastro</h2>
+</div class="container">
+  <form action="/submit_form" method="post">
+    <label for="fname">Nome do Usuário:</label><br>
+    <input type="text" id="fname" name="fname"><br>
 
-  <form action="/submit-cadastro" method="post" data-gtm-form-interact-id="0">
-    <label for="nome" id="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required="">
+    <label for="sex">Sexo:</label><br>
+    <input type="radio" id="male" name="sex" value="male">
+    <label for="male">Masculino</label><br>
+    <input type="radio" id="female" name="sex" value="female">
+    <label for="female">Feminino</label><br>
 
-    <label>Sexo:</label>
-    <input type="radio" id="masculino" name="sexo" value="masculino" data-gtm-form-interact-field-id="0">
-    <label for="masculino">Masculino</label>
-    <input type="radio" id="feminino" name="sexo" value="feminino">
-    <label for="feminino">Feminino</label>
+    <label for="lname">Login:</label><br>
+    <input type="text" id="lname" name="lname"><br>
 
-    <label for="login">Login:</label>
-    <input type="text" id="login" name="login" required="">
+    <label for="pwd">Senha:</label><br>
+    <input type="password" id="pwd" name="pwd"><br>
 
-    <label for="senha" id="senha">Senha:</label>
-    <input type="password" id="senha" name="senha" required="">
+    <label for="cpwd">Confirmação de Senha:</label><br>
+    <input type="password" id="cpwd" name="cpwd"><br>
 
-    <label for="confirmarSenha" id=confirmarsenha>Confirmar Senha:</label>
-    <input type="password" id="confirmarSenha" name="confirmarSenha" required="">
-
-    <label for="setor" id="setor">Setor:</label>
-    <select id="setor" name="setor">      <option value="vendas">Vendas</option>      <option value="rh">Recursos Humanos</option>      <option value="ti">Tecnologia da Informação</option>      <option value="financeiro">Financeiro</option>    </select>
+    <label for="sctr">Setor:</label><br>
+    <select id="sctr" name="sctr">
+        <option value="tech">Tecnologia</option>
+        <option value="hr">Recursos Humanos</option>
+        <option value="sales">Vendas</option>
+    </select><br>
 
     <input type="submit" value="Cadastrar">
   </form>
-  
-</div>
+</div> 
 </body>
 </html>
